@@ -41,6 +41,17 @@
       font-size: 18px;
     }
 	  
+    span {
+      position: relative;
+      animation: mymove 0.5s infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes mymove {
+      from {left: -10px;}
+      to {left: 10px;}
+    }
+	  
     @media only screen and (max-width: 600px) {
     body {
       background: rgb(162,176,21);
@@ -69,6 +80,16 @@
       color: white;
       text-align: center;
       font-size: 15px;
+    }
+	  span {
+      position: relative;
+      animation: mymove 0.3s infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes mymove {
+      from {left: -5px;}
+      to {left: 5px;}
     }
     }
   </style>
